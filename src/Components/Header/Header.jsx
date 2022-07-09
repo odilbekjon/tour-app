@@ -16,12 +16,12 @@ export default function Header(){
                         <li className="header__item"><a className="header__item--link" href="/">Kontakt</a></li>
                         <li className="header__item"><a className="header__item--link" href="/">Biz haqimizda</a></li>
                     </ul>
+                    <div className="select__wrapper">
                     <select className="header__select" id="selected">
                         <option className="header__option" value="en">English</option>
                         <option className="header__option" value="en">Russia</option>
                         <option className="header__option" value="en">Uzbek</option>
                     </select>
-                    <div>
                         <input className="header__search--input" type="text" placeholder="Search"/>
                     </div>
                 </header>

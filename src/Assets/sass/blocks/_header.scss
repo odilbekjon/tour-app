@@ -34,8 +34,38 @@
         color: #285D53;
         font-weight: 600;
     }
+
+    &__select{
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgb(220, 220, 220);
+        margin-right: 20px;
+    }
+
+    &__search--input{
+        padding: 10px;
+        border-radius: 20px;
+        background-color: rgb(220, 220, 220);
+        margin-right: 20px;
+    }
+
+    &__search--input::before{
+        content: "fewfewfw";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../../images/search.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
 }
 
+.select__wrapper{
+    display: flex;
+    align-items: center;
+}
 
 
 
