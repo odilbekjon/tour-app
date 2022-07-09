@@ -24,6 +24,7 @@ export default function Header() {
                         </select>
                         <input className="header__search--input" type="text" placeholder="Search" />
                     </div>
+                    <div className="rus"></div>
                 </header>
             </div>
         </section>
