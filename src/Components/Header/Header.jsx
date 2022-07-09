@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 // images
 import Logo from "../../Assets/images/logo.png";
+import search from "../../Assets/images/search.svg";
 
 export default function Header(){
     return(
@@ -17,12 +18,15 @@ export default function Header(){
                         <li className="header__item"><a className="header__item--link" href="/">Biz haqimizda</a></li>
                     </ul>
                     <div className="select__wrapper">
-                    <select className="header__select" id="selected">
-                        <option className="header__option" value="en">English</option>
-                        <option className="header__option" value="en">Russia</option>
-                        <option className="header__option" value="en">Uzbek</option>
-                    </select>
-                        <input className="header__search--input" type="text" placeholder="Search"/>
+                        <select className="header__select" id="selected">
+                            <option className="header__option" value="en">English</option>
+                            <option className="header__option" value="en">Russia</option>
+                            <option className="header__option" value="en">Uzbek</option>
+                        </select>
+                            <div className="input__wrapper">
+                                <img className="header__search" src={search} width={24} height={24} alt="search" />
+                                <input className="header__search--input" type="text" placeholder="Search..."/>
+                            </div>
                     </div>
                 </header>
             </div>

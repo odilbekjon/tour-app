@@ -43,22 +43,25 @@
     }
 
     &__search--input{
+        max-width: 155px;
+        width: 100%;
         padding: 10px;
         border-radius: 20px;
         background-color: rgb(220, 220, 220);
         margin-right: 20px;
+        padding-left: 40px;
+        border: none;
     }
 
-    &__search--input::before{
-        content: "fewfewfw";
-        display: block;
-        width: 24px;
-        height: 24px;
-        background-image: url(../../images/search.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    &__search--input{
+
     }
+
+    &__search{
+        position: relative;
+        left: 40px;
+    }
+
 
 }
 
@@ -67,5 +70,8 @@
     align-items: center;
 }
 
-
+.input__wrapper{
+    display: flex;
+    align-items: center;
+}
 
