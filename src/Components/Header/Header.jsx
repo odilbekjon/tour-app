@@ -9,7 +9,7 @@ export default function Header() {
         <section>
             <div className="container">
                 <header className="header">
-                    <img src={Logo} width={112} height={47} alt="logo" />
+                    <Link to={'/'} className="header__link--logo"><img src={Logo} width={112} height={47} alt="logo" /></Link>
                     <ul className="header__list">
                         <li className="header__item"><a className="header__item--link active" href="/">Bosh sahifa</a></li>
                         <li className="header__item"><a className="header__item--link" href="/">Shaharlar</a></li>
@@ -23,7 +23,10 @@ export default function Header() {
                             <option className="header__option" value="en">Russia</option>
                             <option className="header__option" value="en">Uzbek</option>
                         </select>
-                        <input className="header__search--input" type="text" placeholder="Search" />
+                            <div className="input__wrapper">
+                                <img className="header__search" src={search} width={24} height={24} alt="search" />
+                                <input className="header__search--input" type="text" placeholder="Search..."/>
+                            </div>
                     </div>
                 </header>
             </div>
