@@ -20,6 +20,17 @@
     }
   }
 
+  .carousel__header::before {
+    content: "";
+    display: inline-block;
+    width: 70px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-right: 30px;
+    transform: translateY(-15px);
+ }
+
   .last_carousel_block {
     height: 80%;
 

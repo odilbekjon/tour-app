@@ -7,7 +7,7 @@ export const NationalFood = () => {
     <div className='national_food_wrapper'>
       <div className='container'>
         <div className='national_food_header'>
-          <h3>Milliy taomlar</h3>
+          <h3 className='carousel__header'>Milliy taomlar</h3>
         </div>
         <LastCarousel />
       </div>
