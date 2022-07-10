@@ -14,8 +14,8 @@ export default function Header() {
                         <li className="header__item active"><Link to={'/'}><a className="header__item--link link-active" href="/">Bosh sahifa</a></Link></li>
                         <li className="header__item"><Link to={'/cities'}><a className="header__item--link" href="/">Shaharlar</a></Link></li>
                         <li className="header__item"><Link to={'/malumotlar'}><a className="header__item--link" href="/">Muhim malumotlar</a></Link></li>
-                        <li className="header__item"><a className="header__item--link" href="/">Kontakt</a></li>
-                        <li className="header__item"><a className="header__item--link" href="/">Biz haqimizda</a></li>
+                        <li className="header__item"><Link to={'/contact'}><a className="header__item--link" href="/">Kontakt</a></Link></li>
+                        <li className="header__item"><Link to={'/about'}><a className="header__item--link" href="/">Biz haqimizda</a></Link></li>
                     </ul>
                     <div className="select__wrapper">
                         <select className="header__select" id="selected">
