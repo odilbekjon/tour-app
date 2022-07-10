@@ -1,7 +1,8 @@
 import Home from "../pages/Home";
 import Single from "../pages/Singlee";
-import Cities from "../pages/Cities";
 import Import from "../pages/ImportantData";
+import { CityPage } from "../pages/InCity";
+import City from "../pages/City";
 
 export const routes = [
     {
@@ -17,11 +18,17 @@ export const routes = [
     {
         name:"Cities",
         path:"/cities",
-        component: Cities
+        component: City
     },
     {
         name:"Import",
         path:"/malumotlar",
         component: Import
+    },
+    {
+        name:"City-page",
+        path:"/city-page",
+        component: CityPage
     }
+
 ]

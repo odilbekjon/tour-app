@@ -5,12 +5,7 @@ import './nationalFood.scss'
 export const NationalFood = () => {
   return (
     <div className='national_food_wrapper'>
-      <div className='container'>
-        <div className='national_food_header'>
-          <h3 className='carousel__header'>Milliy taomlar</h3>
-        </div>
-        <LastCarousel />
-      </div>
+      <LastCarousel title={'Milliy Taomlar'} text={''}/>
     </div>
   )
 }

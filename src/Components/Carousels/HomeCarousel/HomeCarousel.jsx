@@ -43,8 +43,8 @@ export const HomeCarousel = () => {
 
   };
   return (
-    <div className='container'>
-      <div className='home-carousel'>
+    <div className='home-carousel'>
+      <div className='container'>
         <div className='carousel-block'>
           <Slider {...settings}>
             {

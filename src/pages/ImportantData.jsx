@@ -1,9 +1,9 @@
-import Essintial from "../Components/Essintial/Essintial"
+import Essential from "../Components/Essential/Essential"
 
 export default function Import(){
     return(
         <>
-            <Essintial/>
+            <Essential/>
         </>
     )
 }

@@ -1,4 +1,4 @@
-import "./Essintial.scss";
+import "./essential.scss";
 
 // images
 import data from "../../Assets/images/data.png";
@@ -45,7 +45,6 @@ export default function Essintial() {
                             <p className="information__item--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                             <a className="information__item--link" href="#">Batafsil</a>
                         </div>
-                       
                     </div>
                 </div>
             </div>

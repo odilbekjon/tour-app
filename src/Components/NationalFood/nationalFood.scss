@@ -1,49 +1,25 @@
 .national_food_wrapper {
-  height: 550px !important;
   background: url('../../Assets/images/backgroundFood.png') no-repeat;
   background-size: 120% 100%;
-  padding: 30px 0 !important;
 
-  .container {
-    height: 100%;
-  }
-
-  .national_food_header {
-    height: 20%;
-
+  .last_carousel_header {
     h3 {
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 47px;
       color: #fff;
-      margin-bottom: 20px;
     }
   }
 
-  .carousel__header::before {
-    content: "";
-    display: inline-block;
-    width: 70px;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin-right: 30px;
-    transform: translateY(-15px);
- }
+  .carousel__title::before {
+    background-color: #fff !important;
+  }
 
   .last_carousel_block {
-    height: 80%;
-
     .slick-arrow {
-      border: 1px solid #fff;
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
+      border: 2px solid #fff !important;
+      background: transparent;
       z-index: 3;
       opacity: 1;
-
+      
       &::before {
-        font-size: 30px;
         color: #fff;
       }
     }
