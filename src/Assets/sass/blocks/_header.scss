@@ -56,9 +56,23 @@
 
 }
 
+<<<<<<< HEAD
 .active{
     padding-bottom: 10px;
     border-bottom: 2px solid #285D53;
+=======
+.active::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: #285D53;
+    margin: 0 auto;
+    transform: translateY(10px);
+}
+
+.link-active{
+>>>>>>> 641ea344342856d6f8fc8db524da1166378d8498
     color: #285D53;
     font-weight: 600;
 }

@@ -23,6 +23,22 @@
       font-size: 20px;
       line-height: 34px;
       width: 35%;
+<<<<<<< HEAD
     }
+=======
+      margin-left: 100px;
+    }
+
+    .carousel__header::before {
+      content: "";
+      display: inline-block;
+      width: 70px;
+      height: 4px;
+      background-color: #141414;
+      border-radius: 10px;
+      margin-right: 30px;
+      transform: translateY(-15px);
+   }
+>>>>>>> 641ea344342856d6f8fc8db524da1166378d8498
   }
 }

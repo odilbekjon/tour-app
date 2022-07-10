@@ -8,15 +8,15 @@ export const FirstCarousel = () => {
     dots: false,
     infinite: false,
     speed: 2000,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 5,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
@@ -25,7 +25,7 @@ export const FirstCarousel = () => {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 2
         }
       },
@@ -42,7 +42,7 @@ export const FirstCarousel = () => {
     <div className='first_carousel_block'>
       <Slider {...settings}>
         {
-          [1, 2, 3, 4, 5].map((item, key) => {
+          [1, 2, 3, 4, 5, 6, 7].map((item, key) => {
             return (
               <div className='carousel-item' key={key}>
                 <div></div>

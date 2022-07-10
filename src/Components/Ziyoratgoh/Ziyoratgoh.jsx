@@ -8,10 +8,10 @@ export const Ziyoratgoh = () => {
     <div className='first_carousel_wrapper'>
       <div className='container'>
         <div className='first_carousel_header'>
-          <h3>Top ziyoratgohlar</h3>
+          <h3 className='carousel__header'>Top ziyoratgohlar</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
-        <FirstCarousel />
+        <FirstCarousel/>
       </div>
     </div>
   )

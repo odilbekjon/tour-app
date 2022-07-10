@@ -11,9 +11,9 @@ export default function Header() {
                 <header className="header">
                     <Link to={'/'} className="header__link--logo"><img src={Logo} width={112} height={47} alt="logo" /></Link>
                     <ul className="header__list">
-                        <li className="header__item"><a className="header__item--link active" href="/">Bosh sahifa</a></li>
-                        <li className="header__item"><a className="header__item--link" href="/">Shaharlar</a></li>
-                        <li className="header__item"><a className="header__item--link" href="/">Muhim malumotlar</a></li>
+                        <li className="header__item active"><Link to={'/'}><a className="header__item--link link-active" href="/">Bosh sahifa</a></Link></li>
+                        <li className="header__item"><Link to={'/cities'}><a className="header__item--link" href="/">Shaharlar</a></Link></li>
+                        <li className="header__item"><Link to={'/malumotlar'}><a className="header__item--link" href="/">Muhim malumotlar</a></Link></li>
                         <li className="header__item"><a className="header__item--link" href="/">Kontakt</a></li>
                         <li className="header__item"><a className="header__item--link" href="/">Biz haqimizda</a></li>
                     </ul>
