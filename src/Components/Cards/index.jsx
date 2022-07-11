@@ -22,7 +22,12 @@ export default function Cards() {
                                     <div className="card__item--num">231</div>
                                 </div>
                             </div>
-                            <Link to={'/city-page'} className="card__item--link">Batafsil</Link>
+                            <Link to={'/city-page'} className="card__item--link">
+                                Batafsil
+                                <svg width="20" height="14" viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.589576 6.75017V9.25017L16.625 9.25017L12.5718 13.3033L14.3396 15.0711L21.4106 8.00002L14.3396 0.928955L12.5718 2.69672L16.6253 6.75017L0.589576 6.75017Z" fill="#fff" />
+                                </svg>
+                            </Link>
                         </li>
                     )
                 })

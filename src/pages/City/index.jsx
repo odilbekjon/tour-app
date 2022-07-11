@@ -1,7 +1,7 @@
 import Cards from "../../Components/Cards"
 import './city.scss'
 
-export default function City() {
+export const City = () => {
   return (
     <section>
       <div className="container">

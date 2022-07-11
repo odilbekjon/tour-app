@@ -1,12 +1,12 @@
 .last_carousel_wrapper {
-  height: 670px;
+  height: 700px;
   box-sizing: border-box;
   padding: 50px 0;
 
   .last_carousel_header {
     h3 {
       font-weight: 700;
-      font-size: 36px;
+      font-size: 34px;
       line-height: 47px;
       color: #141414;
       margin-bottom: 20px;
@@ -14,10 +14,11 @@
 
     p {
       font-weight: 400;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 34px;
       width: 35%;
       margin-left: 100px;
+      margin-bottom: 30px;
     }
 
     .carousel__title::before {
@@ -53,7 +54,7 @@
       width: 50px;
       border-radius: 50%;
       z-index: 3;
-      opacity: 0.5;
+      opacity: 1;
 
       &::before {
         font-size: 30px;

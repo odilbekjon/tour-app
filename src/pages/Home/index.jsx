@@ -1,9 +1,9 @@
-import { FirstCarousel } from "../Components/Carousels/FirstCarousel/FirstCarousel";
-import { HomeCarousel } from "../Components/Carousels/HomeCarousel/HomeCarousel";
-import { LastCarousel } from "../Components/Carousels/LastCarousel/LastCarousel";
-import { NationalFood } from '../Components/NationalFood/NationalFood'
+import { FirstCarousel } from "../../Components/Carousels/FirstCarousel/FirstCarousel";
+import { HomeCarousel } from "../../Components/Carousels/HomeCarousel/HomeCarousel";
+import { LastCarousel } from "../../Components/Carousels/LastCarousel/LastCarousel";
+import { NationalFood } from '../../Components/NationalFood/NationalFood'
 
-export default function Home() {
+export const Home = () => {
   return (
     <>
       <HomeCarousel />

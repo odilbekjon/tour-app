@@ -105,17 +105,19 @@
 
 .card__item--link {
     background: #285D53;
-    ;
     padding: 10px;
     border-radius: 0 0 10px 10px;
     color: #fff;
     text-align: center;
     transition: all 0.2s linear;
-
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 0;
     opacity: 0;
+
+    svg {
+        margin-left: 10px;
+    }
 }
