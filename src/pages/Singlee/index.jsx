@@ -1,4 +1,4 @@
-import Single1 from "../../Components/Single1/Single";
+import Single1 from "../../Components/SinglePage/Single1/Single";
 import { GaleryCarousel } from "../../Components/Carousels/GaleryCarousel/GaleryCarousel";
 import { FirstCarousel } from "../../Components/Carousels/FirstCarousel/FirstCarousel";
 

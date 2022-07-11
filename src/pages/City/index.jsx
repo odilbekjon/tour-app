@@ -1,4 +1,4 @@
-import Cards from "../../Components/Cards"
+import Cards from "../../Components/CityPage/CityCard"
 import './city.scss'
 
 export const City = () => {

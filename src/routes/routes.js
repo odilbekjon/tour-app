@@ -1,9 +1,11 @@
 import { Home } from "../pages/Home";
 import { Single } from "../pages/Singlee";
-import { Import } from "../pages/ImportantData";
+import { ImportantData } from "../pages/ImportantData";
 import { CityPage } from "../pages/InsideCity";
 import { City } from "../pages/City";
 import { Filter } from "../pages/Filter";
+import { About } from "../pages/About";
+import { Contact } from "../pages/Contact";
 
 export const routes = [
     {
@@ -24,7 +26,7 @@ export const routes = [
     {
         name: "Import",
         path: "/data",
-        component: Import
+        component: ImportantData
     },
     {
         name: "City-page",
@@ -35,6 +37,16 @@ export const routes = [
         name: "Filter-page",
         path: "/filter",
         component: Filter
+    },
+    {
+        name: "About",
+        path: "/about",
+        component: About
+    },
+    {
+        name: "Contact",
+        path: "/contact",
+        component: Contact
     }
 
 ]

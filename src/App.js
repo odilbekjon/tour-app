@@ -9,10 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 // routes
 import { routes } from "./routes/routes"
 
-import './App.css';
-
-
-function App() {
+export const App = () => {
   return (
     <BrowserRouter>
       <Layout>
@@ -29,4 +26,3 @@ function App() {
   );
 }
 
-export default App;

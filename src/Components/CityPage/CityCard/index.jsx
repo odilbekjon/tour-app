@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 // images
-import city from "../../Assets/cities/tashkent.png";
+import city from "../../../Assets/cities/tashkent.png";
 
 import "./сards.scss";
 

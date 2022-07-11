@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 import './homeCarousel.scss'
 import img from '../../../Assets/images/carouselImg.png'
-import { HomeBanner } from '../../HomeBanner/HomeBanner'
+import { HomeBanner } from '../../HomePage/HomeBanner/HomeBanner'
 
 export const HomeCarousel = () => {
   let settings = {

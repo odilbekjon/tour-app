@@ -1,15 +1,15 @@
 import "./Single.scss";
 
 // images
-import Images1 from "../../Assets/images/img1.png";
-import Images2 from "../../Assets/images/img2.png";
-import Images3 from "../../Assets/images/img3.png";
-import Images4 from "../../Assets/images/img4.png";
-import Facebook from "../../Assets/images/f.png";
-import Instagram from "../../Assets/images/i.png";
-import Telegram from "../../Assets/images/t.png";
-import Time from "../../Assets/images/time.png";
-import Registan from "../../Assets/images/registan.png";
+import Images1 from "../../../Assets/images/img1.png";
+import Images2 from "../../../Assets/images/img2.png";
+import Images3 from "../../../Assets/images/img3.png";
+import Images4 from "../../../Assets/images/img4.png";
+import Facebook from "../../../Assets/images/f.png";
+import Instagram from "../../../Assets/images/i.png";
+import Telegram from "../../../Assets/images/t.png";
+import Time from "../../../Assets/images/time.png";
+import Registan from "../../../Assets/images/registan.png";
 
 export default function Single1() {
     return(
