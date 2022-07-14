@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink , Link} from "react-router-dom";
 
 // images
 import Logo from "../../Assets/images/logo.png";
@@ -11,11 +11,11 @@ export default function Header() {
                 <header className="header">
                     <Link to={'/'} className="header__link--logo"><img src={Logo} width={112} height={47} alt="logo" /></Link>
                     <ul className="header__list">
-                        <li className="header__item active"><Link to={'/'}><a className="header__item--link link-active" href="/">Bosh sahifa</a></Link></li>
-                        <li className="header__item"><Link to={'/cities'}><a className="header__item--link" href="/">Shaharlar</a></Link></li>
-                        <li className="header__item"><Link to={'/malumotlar'}><a className="header__item--link" href="/">Muhim malumotlar</a></Link></li>
-                        <li className="header__item"><Link to={'/contact'}><a className="header__item--link" href="/">Kontakt</a></Link></li>
-                        <li className="header__item"><Link to={'/about'}><a className="header__item--link" href="/">Biz haqimizda</a></Link></li>
+                        <li className="header__item "><NavLink to={'/'}><a className="header__item--link" href="/">Bosh sahifa</a></NavLink></li>
+                        <li className="header__item"><NavLink to={'/cities'}><a className="header__item--link" href="/">Shaharlar</a></NavLink></li>
+                        <li className="header__item"><NavLink to={'/malumotlar'}><a className="header__item--link" href="/">Muhim malumotlar</a></NavLink></li>
+                        <li className="header__item"><NavLink to={'/contact'}><a className="header__item--link" href="/">Kontakt</a></NavLink></li>
+                        <li className="header__item"><NavLink to={'/about'}><a className="header__item--link" href="/">Biz haqimizda</a></NavLink></li>
                     </ul>
                     <div className="select__wrapper">
                         <select className="header__select" id="selected">
@@ -25,7 +25,7 @@ export default function Header() {
                         </select>
                             <div className="input__wrapper">
                                 <img className="header__search" src={search} width={24} height={24} alt="search" />
-                                <input className="header__search--input" type="text" placeholder="Search..."/>
+                                <Link className="header__search--input" to={'/'}>Search..</Link>
                             </div>
                     </div>
                 </header>

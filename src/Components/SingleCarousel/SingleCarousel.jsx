@@ -24,13 +24,13 @@ export default class SingleCarousel extends Component {
           <h2 className="carousel__head"> Single Item</h2>
           <Slider {...settings}>
             <div className="carousel__wrapper">
-              <img className="carousel__images" src={Carousel1} width={1200} height={227} alt=""/>
+              <img className="carousel__images" src={Carousel1} width={900} height={227} alt=""/>
             </div>
             <div className="carousel__wrapper">
-              <img className="carousel__images" src={Carousel2} width={1200} height={227} alt=""/>
+              <img className="carousel__images" src={Carousel2} width={900} height={227} alt=""/>
             </div>
             <div className="carousel__wrapper">
-              <img className="carousel__images" src={Carousel3} width={1200} height={227} alt=""/> 
+              <img className="carousel__images" src={Carousel3} width={900} height={227} alt=""/> 
             </div>
           </Slider>
         </div>

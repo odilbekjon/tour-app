@@ -102,8 +102,8 @@ export default function AboutPage(){
                                                 <h2 className="about__right--head">{i.name}</h2>
                                                 <p className="about__right--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                                                 <div className="wrap__links">
-                                                    <a className="wrap__link" href="tel:(99) 123-45-67"><img src={Tel} width={40} alt="" /> (99) 123-45-67</a>
-                                                    <a className="wrap__link" href="tel:(99) 123-45-67"><img src={Gmail} width={40} alt="" /> info@gmail.com</a>
+                                                    <a className="wrap__link" href="tel:+991234567"><img src={Tel} width={40} alt="img" /> (99) 123-45-67</a>
+                                                    <a className="wrap__link" href="mailto:mail@gmail.com"><img src={Gmail} width={40} alt="img" /> info@gmail.com</a>
                                                 </div>
                                             </div>
                                         </div>

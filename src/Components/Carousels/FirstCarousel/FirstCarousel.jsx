@@ -1,6 +1,8 @@
 import React from 'react'
 import Slider from "react-slick";
 
+import { Link } from "react-router-dom"
+ 
 import './firstCarousel.scss'
 
 export const FirstCarousel = () => {
@@ -8,14 +10,14 @@ export const FirstCarousel = () => {
     dots: false,
     infinite: false,
     speed: 2000,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: true
@@ -45,8 +47,10 @@ export const FirstCarousel = () => {
           [1, 2, 3, 4, 5, 6, 7].map((item, key) => {
             return (
               <div className='carousel-item' key={key}>
-                <div></div>
-                <h4>Lorem ipsum</h4>
+                <Link  to={'/single'}>
+                  <div></div>
+                  <h4>Lorem ipsum</h4>
+                </Link>
               </div>
             )
           })
