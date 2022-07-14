@@ -19,16 +19,16 @@ export default function Footer(){
                         <Link to={'/'} className="header__link--logo"><img src={Logo} width={112} height={47} alt="logo" /></Link>
                         <div className="footer__wrapper">
                             <ul className="footer__list">
-                                <li className="footer__item"><Link to={'/'}><a className="footer__item--link" href="/">Bosh sahifa</a></Link></li>
-                                <li className="footer__item"><Link to={'/'}><a className="footer__item--link" href="/">Shaharlar</a></Link></li>
-                                <li className="footer__item"><Link to={'/'}><a className="footer__item--link" href="/">Muhim malumotlar</a></Link></li>
-                                <li className="footer__item"><Link to={'/'}><a className="footer__item--link" href="/">Kontakt</a></Link></li>
-                                <li className="footer__item"><Link to={'/'}><a className="footer__item--link" href="/">Biz haqimizda</a></Link></li>
+                                <li className="footer__item"><Link to={'/'}><a className="footer__item--link">Bosh sahifa</a></Link></li>
+                                <li className="footer__item"><Link to={'/cities'}><a className="footer__item--link">Shaharlar</a></Link></li>
+                                <li className="footer__item"><Link to={'/malumotlar'}><a className="footer__item--link">Muhim malumotlar</a></Link></li>
+                                <li className="footer__item"><Link to={'/contact'}><a className="footer__item--link">Kontakt</a></Link></li>
+                                <li className="footer__item"><Link to={'/about'}><a className="footer__item--link">Biz haqimizda</a></Link></li>
                             </ul>
                             <ul className="footer__list2">
-                                <li className="footer__item"><Link to={'/'}><a className="footer__item--link" href="/">Lorem, ipsum.</a></Link></li>
-                                <li className="footer__item"><Link to={'/'}><a className="footer__item--link" href="/">Lorem, ipsum.</a></Link></li>
-                                <li className="footer__item"><Link to={'/'}><a className="footer__item--link" href="/">Lorem, ipsum.</a></Link></li>
+                                <li className="footer__item"><Link to={'/'}><a className="footer__item--link">Lorem, ipsum.</a></Link></li>
+                                <li className="footer__item"><Link to={'/'}><a className="footer__item--link">Lorem, ipsum.</a></Link></li>
+                                <li className="footer__item"><Link to={'/'}><a className="footer__item--link">Lorem, ipsum.</a></Link></li>
                             </ul>
                         </div>
                     </div>
