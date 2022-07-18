@@ -51,11 +51,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-<<<<<<< HEAD
                             <Link  to={'/city-page'} className="card__item--link" href="#">Batafsil</Link>
-=======
-                            <Link  to={'/'} className="card__item--link">Batafsil</Link>
->>>>>>> 32ff1b944b2fc9b30b4ef268ca9f7ea5fe17714c
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images4} alt="" />
@@ -85,11 +81,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-<<<<<<< HEAD
                             <Link to={'/city-page'} className="card__item--link" href="#">Batafsil</Link>
-=======
-                            <Link to={'/'} className="card__item--link">Batafsil</Link>
->>>>>>> 32ff1b944b2fc9b30b4ef268ca9f7ea5fe17714c
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images7} alt="" />
@@ -99,11 +91,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-<<<<<<< HEAD
                             <Link to={'/city-page'} className="card__item--link" href="#">Batafsil</Link>
-=======
-                            <Link to={'/'} className="card__item--link">Batafsil</Link>
->>>>>>> 32ff1b944b2fc9b30b4ef268ca9f7ea5fe17714c
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images8} alt="" />
@@ -123,11 +111,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-<<<<<<< HEAD
                             <Link to={'/city-page'} className="card__item--link" href="#">Batafsil</Link>
-=======
-                            <Link to={'/'} className="card__item--link">Batafsil</Link>
->>>>>>> 32ff1b944b2fc9b30b4ef268ca9f7ea5fe17714c
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images10} alt="" />
@@ -137,11 +121,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-<<<<<<< HEAD
-                            <Link to={'/city-page'} className="card__item--link" href="#">Batafsil</Link>
-=======
                             <Link to={'/'} className="card__item--link">Batafsil</Link>
->>>>>>> 32ff1b944b2fc9b30b4ef268ca9f7ea5fe17714c
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images11} alt="" />
