@@ -6,8 +6,6 @@ import "./SingleCarousel.scss";
 import Carousel1 from "../../Assets/images/carousel-img1.jpg";
 import Carousel2 from "../../Assets/images/carousel-img2.jpg";
 import Carousel3 from "../../Assets/images/carousel-img3.png";
-import Left from "../../Assets/images/left-carousel.png";
-import Right from "../../Assets/images/right-carousel.png";
 
 export default class SingleCarousel extends Component {
   render() {

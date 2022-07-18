@@ -31,7 +31,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-                            <Link to={'/'} className="card__item--link" >Batafsil</Link>
+                            <Link to={'/city-page'} className="card__item--link" >Batafsil</Link>
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images2} alt="" />
@@ -41,7 +41,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-                            <Link to={'/'} className="card__item--link" >Batafsil</Link>
+                            <Link to={'/city-page'} className="card__item--link" >Batafsil</Link>
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images3} alt="" />
@@ -51,7 +51,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-                            <Link  to={'/'} className="card__item--link" href="#">Batafsil</Link>
+                            <Link  to={'/city-page'} className="card__item--link" href="#">Batafsil</Link>
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images4} alt="" />
@@ -61,7 +61,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-                            <Link  to={'/'} className="card__item--link" >Batafsil</Link>
+                            <Link  to={'/city-page'} className="card__item--link" >Batafsil</Link>
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images5} alt="" />
@@ -71,7 +71,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-                            <Link to={'/'} className="card__item--link" >Batafsil</Link>
+                            <Link to={'/city-page'} className="card__item--link" >Batafsil</Link>
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images6} alt="" />
@@ -81,7 +81,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-                            <Link to={'/'} className="card__item--link" href="#">Batafsil</Link>
+                            <Link to={'/city-page'} className="card__item--link" href="#">Batafsil</Link>
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images7} alt="" />
@@ -91,7 +91,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-                            <Link to={'/'} className="card__item--link" href="#">Batafsil</Link>
+                            <Link to={'/city-page'} className="card__item--link" href="#">Batafsil</Link>
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images8} alt="" />
@@ -101,7 +101,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-                            <Link to={'/'} className="card__item--link" >Batafsil</Link>
+                            <Link to={'/city-page'} className="card__item--link" >Batafsil</Link>
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images9} alt="" />
@@ -111,7 +111,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-                            <Link to={'/'} className="card__item--link" href="#">Batafsil</Link>
+                            <Link to={'/city-page'} className="card__item--link" href="#">Batafsil</Link>
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images10} alt="" />
@@ -121,7 +121,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-                            <Link to={'/'} className="card__item--link" href="#">Batafsil</Link>
+                            <Link to={'/city-page'} className="card__item--link" href="#">Batafsil</Link>
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images11} alt="" />
@@ -131,7 +131,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-                            <Link to={'/'} className="card__item--link" >Batafsil</Link>
+                            <Link to={'/city-page'} className="card__item--link" >Batafsil</Link>
                         </li>
                         <li className="card__item">
                             <img className="card__item--image" src={Images12} alt="" />
@@ -141,7 +141,7 @@ export default function Cards() {
                                 <div className="card__item--location">Shimoliy-sharqiy</div>
                                 <div className="card__item--num">231</div>
                             </div>
-                            <Link to={'/'} className="card__item--link" >Batafsil</Link>
+                            <Link to={'/city-page'} className="card__item--link" >Batafsil</Link>
                         </li>
                         
                     </ul>

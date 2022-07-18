@@ -1,8 +1,11 @@
 .home-carousel {
   height: 600px;
-  box-sizing: border-box;
-  margin-top: 20px;
   position: relative;
+  margin-bottom: 80px;
+
+  .container {
+    height: 100%;
+  }
 
   .carousel-block {
     height: 90%;
@@ -51,6 +54,7 @@
 
       &::before {
         content: '🠔';
+        border: none;
       }
     }
 
@@ -59,6 +63,7 @@
 
       &::before {
         content: '🠖';
+        border: none;
       }
     }
 

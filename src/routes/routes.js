@@ -1,39 +1,52 @@
-import Home from "../pages/Home";
-import Single from "../pages/Singlee";
-import Cities from "../pages/Cities";
-import Import from "../pages/ImportantData";
-import About from "../pages/About";
-import Contact from "../pages/Contact";
+import { Home } from "../pages/Home";
+import { Single } from "../pages/Singlee";
+import { ImportantData } from "../pages/ImportantData";
+import { CityPage } from "../pages/InsideCity";
+import { City } from "../pages/City";
+import { Filter } from "../pages/Filter";
+import { About } from "../pages/About";
+import { Contact } from "../pages/Contact";
 
 export const routes = [
     {
-        name:"Home",
-        path:"/",
+        name: "Home",
+        path: "/",
         component: Home
     },
     {
-        name:"Single",
-        path:"/single",
+        name: "Single",
+        path: "/single",
         component: Single
     },
     {
-        name:"Cities",
-        path:"/cities",
-        component: Cities
+        name: "Cities",
+        path: "/cities",
+        component: City
     },
     {
-        name:"Import",
-        path:"/malumotlar",
-        component: Import
+        name: "Import",
+        path: "/data",
+        component: ImportantData
     },
     {
-        name:"About",
-        path:"/about",
+        name: "City-page",
+        path: "/city-page",
+        component: CityPage
+    },
+    {
+        name: "Filter-page",
+        path: "/filter",
+        component: Filter
+    },
+    {
+        name: "About",
+        path: "/about",
         component: About
     },
     {
-        name:"Contact",
-        path:"/contact",
+        name: "Contact",
+        path: "/contact",
         component: Contact
     }
+
 ]

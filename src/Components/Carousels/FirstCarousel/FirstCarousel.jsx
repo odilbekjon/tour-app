@@ -1,11 +1,10 @@
 import React from 'react'
 import Slider from "react-slick";
-
 import { Link } from "react-router-dom"
  
 import './firstCarousel.scss'
 
-export const FirstCarousel = () => {
+export const FirstCarousel = ({ title, text }) => {
   let settings = {
     dots: false,
     infinite: false,
@@ -40,22 +39,29 @@ export const FirstCarousel = () => {
       }
     ]
   };
+  
   return (
-    <div className='first_carousel_block'>
-      <Slider {...settings}>
-        {
-          [1, 2, 3, 4, 5, 6, 7].map((item, key) => {
-            return (
-              <div className='carousel-item' key={key}>
-                <Link  to={'/single'}>
-                  <div></div>
-                  <h4>Lorem ipsum</h4>
-                </Link>
-              </div>
-            )
-          })
-        }
-      </Slider>
+    <div className='first_carousel_wrapper'>
+      <div className='container'>
+        <div className='first_carousel_header'>
+          <h3 className='carousel__title'>{title}</h3>
+          <p>{text}</p>
+        </div>
+        <div className='first_carousel_block'>
+          <Slider {...settings}>
+            {
+              [1, 2, 3, 4, 5, 6, 7].map((item, key) => {
+                return (
+                  <div className='carousel-item' key={key}>
+                    <Link className='single__carousel--link' to={'/single'}><div></div>
+                    <h4>Lorem ipsum</h4></Link>
+                  </div>
+                )
+              })
+            }
+          </Slider>
+        </div>
+      </div>
     </div>
   )
 }

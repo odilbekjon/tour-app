@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { Link } from 'react-router-dom'
 import './lastCarousel.scss'
 
-export const LastCarousel = () => {
+export const LastCarousel = ({ title, text = null }) => {
   let settings = {
     dots: false,
     infinite: false,
@@ -40,30 +40,39 @@ export const LastCarousel = () => {
   }
 
   return (
-    <div className='last_carousel_block'>
-      <Slider {...settings}>
-        {
-          [1, 2, 3, 4, 5].map((item, key) => {
-            return (
-              <div className='carousel-item' key={key}>
-                <div className='carousel-card'>
-                  <div className='carousel-card-img'>
-                    <img src="" alt="" />
+    <div className='last_carousel_wrapper'>
+      <div className='container'>
+        <div className='last_carousel_header'>
+          <h3 style={text ? {} : { marginBottom: "50px" }} className='carousel__title'>{title}</h3>
+          <p >{text}</p>
+        </div>
+        <div className='last_carousel_block'>
+          <Slider {...settings}>
+            {
+              [1, 2, 3, 4, 5].map((item, key) => {
+                return (
+                  <div className='carousel-item' key={key}>
+                    <div className='carousel-card'>
+                      <div className='carousel-card-img'>
+                        <img src="" alt="" />
+                      </div>
+                      <h4>Lorem Ipsum</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <Link to={''}>
+                        Batafsil
+                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0.589576 6.75017V9.25017L16.625 9.25017L12.5718 13.3033L14.3396 15.0711L21.4106 8.00002L14.3396 0.928955L12.5718 2.69672L16.6253 6.75017L0.589576 6.75017Z" fill="#285D53" />
+                        </svg>
+                      </Link>
+                    </div>
                   </div>
-                  <h4>Lorem Ipsum</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  <Link to={''}>
-                    Batafsil
-                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.589576 6.75017V9.25017L16.625 9.25017L12.5718 13.3033L14.3396 15.0711L21.4106 8.00002L14.3396 0.928955L12.5718 2.69672L16.6253 6.75017L0.589576 6.75017Z" fill="#285D53" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            )
-          })
-        }
-      </Slider>
+                )
+              })
+            }
+          </Slider>
+        </div>
+      </div>
     </div>
+
   )
 }

@@ -1,19 +1,17 @@
-import React from 'react'
 import Slider from "react-slick";
-import './homeCarousel.scss'
-import img from '../../../Assets/images/carouselImg.png'
-import { HomeBanner } from '../../HomePage/HomeBanner/HomeBanner'
+import "./galeryCarousel.scss";
 
-export const HomeCarousel = () => {
+// images
+import Carousel1 from "../../../Assets/images/carousel-img1.jpg";
+
+export const GaleryCarousel = ({ title }) => {
   let settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 0,
-    autoplay: true,
-    fade: true,
+    initialSlide: 1,
     responsive: [
       {
         breakpoint: 1024,
@@ -39,33 +37,32 @@ export const HomeCarousel = () => {
           slidesToScroll: 1
         }
       }
-    ],
+    ]
+  }
 
-  };
   return (
-    <div className='home-carousel'>
+    <div className='galery_carousel_wrapper'>
       <div className='container'>
-        <div className='carousel-block'>
+        <div className='galery_carousel_header'>
+          <h3 className='carousel__title'>{title}</h3>
+        </div>
+        <div className='galery_carousel_block'>
           <Slider {...settings}>
             {
-              [1, 2, 3, 4, 5].map((item, key) => {
+              [1, 2, 3].map((item, key) => {
                 return (
-                  <div className='carousel-item' key={key}>
-                    <img className='carousel-item-img' src={img} alt="" />
-                    <div className='carousel-item-content'>
-                      <h4>Enjoy the nature</h4>
-                      <h2>Welcome to Uzbekistan!</h2>
-                      <h3>Lorem Ipsum</h3>
+                  <div className="carousel-item-box" key={key}>
+                    <div className="carousel-item">
+                      <img className="carousel-item-img" src={Carousel1} alt="carousel"/>
                     </div>
                   </div>
                 )
               })
             }
-
           </Slider>
         </div>
-        <HomeBanner />
       </div>
     </div>
   )
+
 }

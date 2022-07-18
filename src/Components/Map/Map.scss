@@ -1,0 +1,26 @@
+.map {
+    margin-top: 50px;
+
+    &__head {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        color: #141414;
+    }
+
+    &__head::before {
+        content: "";
+        display: inline-block;
+        width: 65px;
+        height: 3px;
+        background-color: #141414;
+        border-radius: 10px;
+        margin-right: 30px;
+        margin-bottom: 15px;
+    }
+
+    &__box {
+        width: 100%;
+    }
+}
