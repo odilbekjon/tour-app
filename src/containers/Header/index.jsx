@@ -22,8 +22,8 @@ export default function Header() {
             path: '/data'
         },
         {
-            name: 'Kontakt',
-            path: '/contact'
+            name: 'Rejalashtirish',
+            path: '/planning'
         },
         {
             name: 'Biz haqimizda',

@@ -1,6 +1,6 @@
 import React from 'react'
-import { FilterCard } from '../../Components/FilterPage/FilterCard/FilterCard'
-import { FilterCheck } from '../../Components/FilterPage/FilterCheck/FilterCheck'
+import { FilterCard } from '../../Components/FilterPage/FilterCard'
+import { FilterCheck } from '../../Components/FilterPage/FilterCheck'
 import './filter.scss'
 
 export const Filter = () => {

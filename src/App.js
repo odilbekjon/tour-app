@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navigate } from 'react-router';
-import Layout from "./layout/layout";
+import Layout from "./layout";
 import '../src/Assets/sass/main.scss';
 // react-slick-carousel 
 import "slick-carousel/slick/slick.css";

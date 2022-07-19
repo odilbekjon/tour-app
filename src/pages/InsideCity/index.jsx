@@ -1,23 +1,25 @@
 import React from 'react'
-import { FirstCarousel } from '../../Components/Carousels/FirstCarousel/FirstCarousel';
-import { LastCarousel } from '../../Components/Carousels/LastCarousel/LastCarousel';
+import { CityCarousel } from '../../Components/Carousels/CityCarousel';
+import { MainCarousel_one } from '../../Components/Carousels/MainCarousel_one';
+import { MainCarousel_two } from '../../Components/Carousels/MainCarousel_two';
 import { RestourantCarousel } from '../../Components/Carousels/RestourantCarousel';
 
 export const CityPage = () => {
 
   return (
     <>
-      <FirstCarousel
+      <CityCarousel />
+      <MainCarousel_one
         title={'Toshkent diqqatga sazovor ziyoratgohlari'}
         text={'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'}
       />
       <div className='carousel_wrapper' style={{ background: '#D7E8E5' }}>
-        <LastCarousel title={'Mehmonxonalar'} />
+        <MainCarousel_two title={'Mehmonxonalar'} />
       </div>
-      <LastCarousel title={'Istirohat bog’lari'} />
-      <LastCarousel title={'Teatr va kino zallar'} />
+      <MainCarousel_two title={'Istirohat bog’lari'} />
+      <MainCarousel_two title={'Teatr va kino zallar'} />
       <RestourantCarousel title='Restoranlar' />
-      <LastCarousel title={'Masjidlar'} />
+      <MainCarousel_two title={'Masjidlar'} />
     </>
   )
 }

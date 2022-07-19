@@ -44,8 +44,8 @@ export const routes = [
         component: About
     },
     {
-        name: "Contact",
-        path: "/contact",
+        name: "Rejalashtirish",
+        path: "/planning",
         component: Contact
     }
 

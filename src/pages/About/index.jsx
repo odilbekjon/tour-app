@@ -1,17 +1,18 @@
+import { Link } from "react-router-dom";
 import "./about.scss";
 
 // images
-import Manager from "../../Assets/images/manager.png";
 import Tel from "../../Assets/images/tel.png";
 import Gmail from "../../Assets/images/gmail.png";
-import Person1 from "../../Assets/images/person1.png";
-import Person2 from "../../Assets/images/person2.png";
-import Person3 from "../../Assets/images/person3.png";
-import Person4 from "../../Assets/images/person4.png";
-import Person6 from "../../Assets/images/person6.png";
-import Person7 from "../../Assets/images/person7.png";
-import Person8 from "../../Assets/images/person8.png";
-import { Link } from "react-router-dom";
+
+import Manager from "../../Assets/persons/manager.png";
+import Person1 from "../../Assets/persons/person1.png";
+import Person2 from "../../Assets/persons/person2.png";
+import Person3 from "../../Assets/persons/person3.png";
+import Person4 from "../../Assets/persons/person4.png";
+import Person6 from "../../Assets/persons/person6.png";
+import Person7 from "../../Assets/persons/person7.png";
+import Person8 from "../../Assets/persons/person8.png";
 
 const projectLeader = [
     {
@@ -96,7 +97,7 @@ export const About = () => {
                                 return (
                                     <div key={e} className="about__wrap">
                                         <div className="about__wrap--left">
-                                            <img src={i.image} width={400} height={400} alt="image" />
+                                            <img src={i.image} width={400} height={400} alt="" />
                                         </div>
                                         <div className="about__wrap--right">
                                             <h2 className="about__right--head">{i.name}</h2>

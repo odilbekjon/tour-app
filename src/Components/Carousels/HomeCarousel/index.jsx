@@ -1,19 +1,19 @@
+import React from 'react'
 import Slider from "react-slick";
-import "./galeryCarousel.scss";
+import './homeCarousel.scss'
+import img from '../../../Assets/carousel-img/carouselImg.png'
+import { HomeBanner } from '../../HomePage/HomeBanner'
 
-// images
-import Carousel1 from "../../../Assets/images/carousel-img1.jpg";
-import Carousel2 from "../../../Assets/images/carousel-img2.jpg";
-import Carousel3 from "../../../Assets/images/carousel-img3.png";
-
-export const GaleryCarousel = ({ title }) => {
+export const HomeCarousel = () => {
   let settings = {
-    dots: false,
+    dots: true,
     infinite: false,
     speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 1,
+    initialSlide: 0,
+    autoplay: true,
+    fade: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -39,32 +39,33 @@ export const GaleryCarousel = ({ title }) => {
           slidesToScroll: 1
         }
       }
-    ]
-  }
+    ],
 
+  };
   return (
-    <div className='galery_carousel_wrapper'>
+    <div className='home-carousel'>
       <div className='container'>
-        <div className='galery_carousel_header'>
-          <h3 className='carousel__title'>{title}</h3>
-        </div>
-        <div className='galery_carousel_block'>
+        <div className='carousel-block'>
           <Slider {...settings}>
             {
-              [1, 2, 3].map((item, key) => {
+              [1, 2, 3, 4, 5].map((item, key) => {
                 return (
-                  <div className="carousel-item-box" key={key}>
-                    <div className="carousel-item">
-                      <img src={Carousel1} alt="" />
+                  <div className='carousel-item' key={key}>
+                    <img className='carousel-item-img' src={img} alt="" />
+                    <div className='carousel-item-content'>
+                      <h4>Enjoy the nature</h4>
+                      <h2>Welcome to Uzbekistan!</h2>
+                      <h3>Lorem Ipsum</h3>
                     </div>
                   </div>
                 )
               })
             }
+
           </Slider>
         </div>
+        <HomeBanner />
       </div>
     </div>
   )
-
 }

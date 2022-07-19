@@ -1,11 +1,11 @@
 import React from 'react'
-import { LastCarousel } from '../Carousels/LastCarousel/LastCarousel'
+import { MainCarousel_two } from '../Carousels/MainCarousel_two'
 import './nationalFood.scss'
 
 export const NationalFood = () => {
   return (
     <div className='national_food_wrapper'>
-      <LastCarousel title={'Milliy Taomlar'} text={''}/>
+      <MainCarousel_two title={'Milliy Taomlar'} text={''}/>
     </div>
   )
 }

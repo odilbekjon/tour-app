@@ -5,9 +5,9 @@ import Images1 from "../../../Assets/images/img1.png";
 import Images2 from "../../../Assets/images/img2.png";
 import Images3 from "../../../Assets/images/img3.png";
 import Images4 from "../../../Assets/images/img4.png";
-import Facebook from "../../../Assets/images/f.png";
-import Instagram from "../../../Assets/images/i.png";
-import Telegram from "../../../Assets/images/t.png";
+// import Facebook from "../../../Assets/images/f.png";
+// import Instagram from "../../../Assets/images/i.png";
+// import Telegram from "../../../Assets/images/t.png";
 import Time from "../../../Assets/images/time.png";
 import Registan from "../../../Assets/images/registan.png";
 
@@ -36,14 +36,14 @@ export default function Single1() {
                                 <p className="single__left--title"><b>Dorixona:</b> Dorixona 111, ArzonApteka, Apteka 555</p>
                            </li>
                         </ul>
-                        <div className="single__left--content">
+                        {/* <div className="single__left--content">
                             <h2 className="left__content--title">Bo’lishing</h2>
                             <div className="left__content--images">
                                 <a className="left__content--img" href="#"><img src={Facebook} width={60} height={60} alt="Facebook" /></a>
                                 <a className="left__content--img" href="#"><img src={Instagram} width={60} height={60} alt="Instagram" /></a>
                                 <a className="left__content--img" href="#"><img src={Telegram} width={60} height={60} alt="Telegram" /></a>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="single__right">
                         <h1 className="single__right--head">Registon Maydoni va uning tarixi</h1>

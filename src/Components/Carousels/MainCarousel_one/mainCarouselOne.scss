@@ -1,4 +1,4 @@
-.first_carousel_wrapper {
+.main_carousel_one_wrapper {
   height: 550px;
   box-sizing: border-box;
   padding: 40px 0;
@@ -8,7 +8,7 @@
     position: relative;
   }
 
-  .first_carousel_header {
+  .main_carousel_one_header {
     height: 30%;
 
     h3 {
@@ -39,7 +39,7 @@
     transform: translateY(-15px);
   }
 
-  .first_carousel_block {
+  .main_carousel_one_block {
     height: 70%;
 
     .slick-slider {

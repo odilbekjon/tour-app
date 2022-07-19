@@ -22,7 +22,7 @@
     }
 
     &__box {
-        min-height: 400px;
+        min-height: 350px;
         box-sizing: border-box;
         padding: 20px;
         background-color: #D7E8E5;
@@ -148,12 +148,12 @@
     &__person--item--block {
         border: 1px solid #285D53;
         border-radius: 30px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         transition: all 0.2s linear;
         cursor: pointer;
 
         &:hover {
-            transform: translateY(-30px);
+            transform: translateY(-25px);
             transition: all 0.2s linear;
             box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.15);
         }

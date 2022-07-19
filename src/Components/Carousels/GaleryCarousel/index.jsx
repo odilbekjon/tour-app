@@ -1,21 +1,22 @@
-import React from 'react'
 import Slider from "react-slick";
+import "./galeryCarousel.scss";
 
-import './firstCarousel.scss'
+// images
+import Carousel1 from "../../../Assets/carousel-img/carousel-img1.jpg";
 
-export const FirstCarousel = ({ title, text }) => {
+export const GaleryCarousel = ({ title = '' }) => {
   let settings = {
     dots: false,
     infinite: false,
     speed: 2000,
-    slidesToShow: 5,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 0,
+    initialSlide: 1,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true
@@ -24,9 +25,9 @@ export const FirstCarousel = ({ title, text }) => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2
+          initialSlide: 1
         }
       },
       {
@@ -37,23 +38,23 @@ export const FirstCarousel = ({ title, text }) => {
         }
       }
     ]
-  };
-  
+  }
+
   return (
-    <div className='first_carousel_wrapper'>
+    <div className='galery_carousel_wrapper'>
       <div className='container'>
-        <div className='first_carousel_header'>
+        <div style={title == '' ? { display: 'none' } : {}} className='galery_carousel_header'>
           <h3 className='carousel__title'>{title}</h3>
-          <p>{text}</p>
         </div>
-        <div className='first_carousel_block'>
+        <div className='galery_carousel_block'>
           <Slider {...settings}>
             {
-              [1, 2, 3, 4, 5, 6, 7].map((item, key) => {
+              [1, 2, 3].map((item, key) => {
                 return (
-                  <div className='carousel-item' key={key}>
-                    <div></div>
-                    <h4>Lorem ipsum</h4>
+                  <div className="carousel-item-box" key={key}>
+                    <div className="carousel-item">
+                      <img src={Carousel1} alt="" />
+                    </div>
                   </div>
                 )
               })

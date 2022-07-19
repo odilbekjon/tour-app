@@ -1,9 +1,9 @@
 import React from 'react'
 import Slider from "react-slick";
 import { Link } from 'react-router-dom'
-import './lastCarousel.scss'
+import './mainCarouselTwo.scss'
 
-export const LastCarousel = ({ title, text = null }) => {
+export const MainCarousel_two = ({ title = '', text = '' }) => {
   let settings = {
     dots: false,
     infinite: false,
@@ -40,13 +40,13 @@ export const LastCarousel = ({ title, text = null }) => {
   }
 
   return (
-    <div className='last_carousel_wrapper'>
+    <div className='main_carousel_two_wrapper'>
       <div className='container'>
-        <div className='last_carousel_header'>
+        <div className='main_carousel_two_header'>
           <h3 style={text ? {} : { marginBottom: "50px" }} className='carousel__title'>{title}</h3>
           <p >{text}</p>
         </div>
-        <div className='last_carousel_block'>
+        <div className='main_carousel_two_block'>
           <Slider {...settings}>
             {
               [1, 2, 3, 4, 5].map((item, key) => {
