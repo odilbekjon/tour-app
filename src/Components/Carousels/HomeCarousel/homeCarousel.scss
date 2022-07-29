@@ -1,4 +1,4 @@
-.home-carousel {
+.home__carousel {
   height: 600px;
   position: relative;
   margin-bottom: 80px;
@@ -7,7 +7,7 @@
     height: 100%;
   }
 
-  .carousel-block {
+  .carousel__block {
     height: 90%;
 
     .slick-slider {
@@ -67,12 +67,12 @@
       }
     }
 
-    .carousel-item {
+    .carousel__item {
       height: 100% !important;
       overflow: hidden;
       position: relative;
 
-      .carousel-item-img {
+      .carousel__item--img {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -84,36 +84,89 @@
         z-index: 3;
       }
 
-      .carousel-item-content {
+      .carousel__item--content {
         z-index: 5;
         position: relative;
-        color: #fff;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
 
-        h4 {
+        .carousel__item--title {
           margin-top: 80px;
           margin-bottom: 15px;
           font-weight: 500;
           font-size: 24px;
           line-height: 28px;
+          color: #fff;
         }
 
-        h2 {
+        .carousel__item--subtitle {
           font-weight: 800;
           font-size: 68px;
           line-height: 80px;
           margin-bottom: 30px;
+          color: #fff;
 
         }
 
-        h3 {
+        .carousel__item--text {
           font-weight: 500;
           font-size: 28px;
           line-height: 33px;
+          color: #fff;
+
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width:0) and (max-width:446.9px) {
+  .home__carousel {
+    height: 500px;
+    margin-bottom: 0;
+
+    .carousel__block {
+      height: 90%;
+
+      .slick-arrow {
+        height: 45px !important;
+        width: 45px !important;
+        border-radius: 50%;
+        top: 63%;
+      }
+
+      .slick-prev {
+        left: 25px;
+      }
+
+      .slick-next {
+        right: 25px;
+      }
+
+      .carousel__item {
+        .carousel__item--content {
+          .carousel__item--title {
+            margin-top: 80px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            line-height: 22px;
+          }
+
+          .carousel__item--subtitle {
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 30px;
+          }
+
+          .carousel__item--text {
+            font-size: 18px;
+            line-height: 30px;
+            margin-top: 20px;
+          }
         }
       }
     }

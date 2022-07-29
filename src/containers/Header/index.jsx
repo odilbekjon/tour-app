@@ -5,6 +5,7 @@ import './header.scss'
 import Logo from "../../Assets/images/logo.png";
 import search from "../../Assets/images/search.svg";
 import { useLocation } from "react-router-dom";
+
 export default function Header() {
     let classNames = require('classnames')
 
@@ -32,8 +33,6 @@ export default function Header() {
     ]
     let loc = useLocation()
 
-
-    console.log(loc);
     return (
         <section>
             <div className="container">

@@ -122,3 +122,87 @@
     }
   }
 }
+
+
+@media (min-width:0) and (max-width:446.9px) {
+  .main_carousel_one_wrapper {
+    height: 500px;
+
+    .main_carousel_one_header {
+      height: 30%;
+
+      h3 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 25px;
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    .carousel__title::before {
+      width: 40px;
+      height: 4px;
+      margin-right: 15px;
+      transform: translateY(-6px);
+    }
+
+    .main_carousel_one_block {
+      height: 70%;
+
+
+      .slick-arrow {
+        background: #285D53;
+        height: 40px !important;
+        width: 40px !important;
+        top: 0;
+        border: 2px solid #285D53;
+
+        &::before {
+          color: #fff;
+        }
+      }
+
+      .slick-disabled {
+        background-color: transparent;
+      }
+
+      .slick-prev.slick-disabled:before,
+      .slick-next.slick-disabled:before {
+        opacity: 1;
+        color: #285D53;
+      }
+
+      .slick-prev {
+        right: 50px;
+      }
+
+      .slick-next {
+        right: 0;
+      }
+
+      .carousel-item {
+        margin-top: 15px;
+
+        div {
+          border-radius: 50% 50% 0 0;
+          background-color: grey;
+          height: 80% !important;
+          width: 70% !important;
+          margin: 0 auto;
+          margin-bottom: 10px;
+        }
+
+        h4 {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}

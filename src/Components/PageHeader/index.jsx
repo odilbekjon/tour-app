@@ -6,7 +6,7 @@ export const PageHeader = () => {
   return (
     <ul class="breadcrumb">
       <li><Link to='/'>Bosh sahifa</Link></li>
-      <li><Link to='/'>Shaharlar</Link></li>
+      <li><Link to='/cities'>Shaharlar</Link></li>
       <li>Toshkent</li>
     </ul>
   )

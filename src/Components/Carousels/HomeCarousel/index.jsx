@@ -7,7 +7,7 @@ import { HomeBanner } from '../../HomePage/HomeBanner'
 export const HomeCarousel = () => {
   let settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -36,26 +36,27 @@ export const HomeCarousel = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots:false
         }
       }
     ],
 
   };
   return (
-    <div className='home-carousel'>
+    <div className='home__carousel'>
       <div className='container'>
-        <div className='carousel-block'>
+        <div className='carousel__block'>
           <Slider {...settings}>
             {
               [1, 2, 3, 4, 5].map((item, key) => {
                 return (
-                  <div className='carousel-item' key={key}>
-                    <img className='carousel-item-img' src={img} alt="" />
-                    <div className='carousel-item-content'>
-                      <h4>Enjoy the nature</h4>
-                      <h2>Welcome to Uzbekistan!</h2>
-                      <h3>Lorem Ipsum</h3>
+                  <div className='carousel__item' key={key}>
+                    <img className='carousel__item--img' src={img} alt="" />
+                    <div className='carousel__item--content'>
+                      <h4 className='carousel__item--title'>Enjoy the nature</h4>
+                      <h2 className='carousel__item--subtitle'>Welcome to Uzbekistan!</h2>
+                      <h3 className='carousel__item--text'>Lorem Ipsum</h3>
                     </div>
                   </div>
                 )

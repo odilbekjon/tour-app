@@ -33,7 +33,9 @@ export const MainCarousel_two = ({ title = '', text = '' }) => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: false,
+          arrows:false
         }
       }
     ]
@@ -44,7 +46,7 @@ export const MainCarousel_two = ({ title = '', text = '' }) => {
       <div className='container'>
         <div className='main_carousel_two_header'>
           <h3 style={text ? {} : { marginBottom: "50px" }} className='carousel__title'>{title}</h3>
-          <p >{text}</p>
+          <p className='carousel__text'>{text}</p>
         </div>
         <div className='main_carousel_two_block'>
           <Slider {...settings}>
