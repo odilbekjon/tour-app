@@ -1,3 +1,30 @@
+.sticky {
+    height: 70px;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px !important;
+    animation-name: sticky_active;
+    animation-duration: 0.8s;
+}
+
+@keyframes sticky_active {
+    0% {
+        opacity: 0;
+        top: -70px;
+        padding: 20px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
 .header {
     padding: 20px 0;
     display: flex;
@@ -27,35 +54,35 @@
         font-size: 18px;
         line-height: 21px;
         color: #141414;
-        &:hover{
+
+        &:hover {
             color: #285D53;
         }
     }
 
     &__select {
-        padding: 10px;
-        border-radius: 20px;
-        background-color: rgb(220, 220, 220);
-        margin-right: 20px;
-        border: none;
-    }
-
-    &__search--input {
-        max-width: 145px;
-        width: 100%;
-        padding: 12px;
-        border-radius: 20px;
-        background-color: rgb(220, 220, 220);
-        padding-left: 40px;
-        border: none;
-        outline: none;
+        margin-right: 10px;
     }
 
     &__search {
-        position: relative;
-        left: 35px;
+        margin-right: 10px;
     }
 
+}
+
+.ant-select {
+    margin-right: 10px !important;
+}
+
+.ant-select-selector {
+    border-radius: 20px !important;
+    font-size: 14px !important;
+    background: rgba(40, 93, 83, 0.1) !important;
+
+    &:hover {
+        transition: all 0.2s linear;
+        border: 1px solid #285D53 !important;
+    }
 }
 
 .active::after {
@@ -66,6 +93,13 @@
     background-color: #285D53;
     margin: 0 auto;
     transform: translateY(10px);
+    font-weight: 600;
+    color: #285D53;
+}
+
+.active {
+    font-weight: 600;
+    color: #285D53;
 }
 
 .active a {
@@ -82,4 +116,26 @@
 .input__wrapper {
     display: flex;
     align-items: center;
+    max-width: 135px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    background: rgba(40, 93, 83, 0.1) !important;
+    border: 1px solid transparent;
+    transition: all 0.2s linear;
+
+    &:hover {
+        transition: all 0.2s linear;
+        border: 1px solid #285D53;
+    }
+}
+
+.header__search--input {
+    color: #141414;
+    padding: 0 10px;
+    font-weight: 500;
+
+    &:hover {
+        color: #141414;
+    }
 }

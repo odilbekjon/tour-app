@@ -53,7 +53,7 @@ export const GaleryCarousel = ({ title = '' }) => {
                 return (
                   <div className="carousel-item-box" key={key}>
                     <div className="carousel-item">
-                      <img src={Carousel1} alt="" />
+                      <img className="carousel-item-img" src={Carousel1} alt="carousel"/>
                     </div>
                   </div>
                 )

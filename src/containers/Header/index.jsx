@@ -5,9 +5,17 @@ import './header.scss'
 import Logo from "../../Assets/images/logo.png";
 import search from "../../Assets/images/search.svg";
 import { useLocation } from "react-router-dom";
+import { Select } from 'antd';
+
 
 export default function Header() {
     let classNames = require('classnames')
+    const { Option } = Select;
+    let loc = useLocation()
+
+    const handleChange = (value) => {
+        console.log(`selected ${value}`);
+    };
 
     const menu = [
         {
@@ -31,8 +39,11 @@ export default function Header() {
             path: '/about'
         },
     ]
-    let loc = useLocation()
 
+    window.addEventListener('scroll', function () {
+        let head = document.querySelector('.header')
+        head.classList.toggle('sticky', window.scrollY > 100)
+    })
     return (
         <section>
             <div className="container">
@@ -58,19 +69,16 @@ export default function Header() {
                         }
                     </ul>
                     <div className="select__wrapper">
-                        <select className="header__select" id="selected">
-                            <option className="header__option" value="en">English</option>
-                            <option className="header__option" value="en">Russia</option>
-                            <option className="header__option" value="en">Uzbek</option>
-                        </select>
+                        <Select className="header__select" size="large" defaultValue="Uzbek" style={{ width: 140 }} onChange={handleChange}>
+                            <Option value="UZ">Uzbek</Option>
+                            <Option value="RU">Russian</Option>
+                            <Option value="ENG">English</Option>
+                        </Select>
                         <div className="input__wrapper">
-                            <img className="header__search"
-                                src={search}
-                                width={24}
-                                height={24}
-                                alt="search"
-                            />
-                            <input className="header__search--input" type="text" placeholder="Search..." />
+                            <Link className="header__search--input" to={'/filter'}>
+                                <img className="header__search" src={search} width={24} height={24} alt="search" />
+                                Qidiruv
+                            </Link>
                         </div>
                     </div>
                 </header>

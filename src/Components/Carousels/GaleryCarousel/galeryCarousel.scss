@@ -3,12 +3,17 @@
     box-sizing: border-box;
     padding: 50px 0;
     background: rgba(56, 138, 123, 0.2);
+    background-image: url('../../../Assets/images/single1_bg.png');
+    background-position: top 50px center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .container {
         height: 100%;
     }
 
     .galery_carousel_header {
+        position: relative;
         height: 20%;
 
         h3 {

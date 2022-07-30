@@ -8,6 +8,8 @@ export const Map = () => {
     <div className='container'>
       <div className='map__wrapper'>
         <h3 className='map__title'>Viloyatlar</h3>
+        <img className='map__img' src={uzbMap} alt="" />
+      
       </div>
     </div>
   )
