@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import './header.scss'
+import useLang from "../../Hook/useLang";
+import content from "../../Localization/content";
+import './header.scss';
 
 // images
 import Logo from "../../Assets/images/logo.png";
@@ -16,6 +18,13 @@ export default function Header() {
     const handleChange = (value) => {
         console.log(`selected ${value}`);
     };
+
+  const [lang, setLang] = useLang();
+
+  // LANG
+  const onChangeLang = (e) => {
+    setLang(e.target.value);
+  };
 
     const menu = [
         {

@@ -1,4 +1,6 @@
 import "./AboutPage.scss";
+import useLang from "../../Hook/useLang";
+import content from "../../Localization/content";
 
 // images
 import Manager from "../../Assets/images/manager.png";
@@ -77,11 +79,15 @@ const organizers = [
 ]
 
 export default function AboutPage(){
+
+  const [ lang ] = useLang();
+
+
     return(
         <section>
             {/* <div className="container">
                 <div className="about">
-                    <h1 className="about__head">Loyiha haqida</h1>
+                    <h1 className="about__head">{content[lang].home.title4}</h1>
                     <div className="about__box">
                         <ul className="about__box--list">
                             <li className="about__box--item"><a className="about__box--link green" href="#">Loyiha haqida</a></li>
