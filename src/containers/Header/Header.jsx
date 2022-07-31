@@ -1,12 +1,22 @@
 import { Link } from "react-router-dom";
-import './header.scss'
+import useLang from "../../Hook/useLang";
+import content from "../../Localization/content";
+import './header.scss';
 
 // images
 import Logo from "../../Assets/images/logo.png";
 import search from "../../Assets/images/search.svg";
 import { useLocation } from "react-router-dom";
+
 export default function Header() {
     let classNames = require('classnames')
+
+  const [lang, setLang] = useLang();
+
+  // LANG
+  const onChangeLang = (e) => {
+    setLang(e.target.value);
+  };
 
     const menu = [
         {
@@ -59,10 +69,13 @@ export default function Header() {
                         }
                     </ul>
                     <div className="select__wrapper">
-                        <select className="header__select" id="selected">
+                        <select
+                        defaultValue={lang}
+                        onChange={(e) => onChangeLang(e)}
+                         className="header__select" id="selected">
                             <option className="header__option" value="en">English</option>
-                            <option className="header__option" value="en">Russia</option>
-                            <option className="header__option" value="en">Uzbek</option>
+                            <option className="header__option" value="ru">Russia</option>
+                            <option className="header__option" value="uz">Uzbek</option>
                         </select>
                         <div className="input__wrapper">
                             <Link className="header__search--input" to={'/filter'}>

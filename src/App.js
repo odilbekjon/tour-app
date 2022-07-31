@@ -11,7 +11,7 @@ import { routes } from "./routes/routes"
 
 export const App = () => {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
       <Layout>
         <Routes>
           {routes.map((route, index) => {
@@ -22,7 +22,7 @@ export const App = () => {
           <Route path="*" element={<Navigate to='/' />} />
         </Routes>
       </Layout>
-    </BrowserRouter>
+    // </BrowserRouter>
   );
 }
 
