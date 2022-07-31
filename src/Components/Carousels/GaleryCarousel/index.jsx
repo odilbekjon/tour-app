@@ -7,7 +7,7 @@ import Carousel1 from "../../../Assets/carousel-img/carousel-img1.jpg";
 export const GaleryCarousel = ({ title = '' }) => {
   let settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -53,7 +53,7 @@ export const GaleryCarousel = ({ title = '' }) => {
                 return (
                   <div className="carousel-item-box" key={key}>
                     <div className="carousel-item">
-                      <img className="carousel-item-img" src={Carousel1} alt="carousel"/>
+                      <img className="carousel-item-img" src={Carousel1} alt="carousel" />
                     </div>
                   </div>
                 )

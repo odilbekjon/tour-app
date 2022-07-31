@@ -44,6 +44,7 @@ export default function Header() {
         let head = document.querySelector('.header')
         head.classList.toggle('sticky', window.scrollY > 100)
     })
+    
     return (
         <section>
             <div className="container">

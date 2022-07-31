@@ -28,7 +28,7 @@ export const Planning = () => {
         <div className='planning__header--content'>
           <h2 className='planning__header--title'>O’zbekiston bo’ylab sayohatlar rejalashtiring</h2>
           <p className='planning__header--text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <button className='planning__header--btn' onClick={() => scrollTo(planningForm)}>Rejalashtirish</button>
+          <button className='planning__header--btn'><a href='#plan'> Rejalashtirish</a></button>
         </div>
         <div className='planning__header--img--block'>
           <img className='planning__header--img1' src={img1} alt="" />
@@ -48,7 +48,6 @@ export const Planning = () => {
         <img className='planning__header--ellipse2' src={ellipse2} alt="" />
       </div>
       <Regions />
-      <div  id='scrolling' />
       <PlanningForm />
     </div>
   )

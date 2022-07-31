@@ -3,7 +3,7 @@ import './homeBanner.scss'
 
 export const HomeBanner = () => {
   return (
-    <div className='home__banner'>
+    <div className='home__banner container'>
       {
         [1, 2, 3].map((item, key) => {
           return (
