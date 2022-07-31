@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import "./about.scss";
 
 // images
@@ -78,17 +78,32 @@ const organizers = [
 ]
 
 export const About = () => {
+    const [activeBtn, setActiveVBtn] = useState('firstBtn')
+    let classNames = require('classnames')
+    let activeFirst = classNames({
+        "about__btn": true,
+        "active-btn": activeBtn
+    })
+    let activeSecond = classNames({
+        "about__btn": true,
+        "active-btn": !activeBtn
+    })
+    
     return (
         <section>
             <div className="container">
                 <div className="about">
                     <h1 className="about__head">Loyiha haqida</h1>
                     <div className="about__box">
-                        <ul className="about__box--list">
-                            <li className="about__box--item"><Link className="about__box--link active-link" to='/' >Loyiha haqida</Link></li>
-                            <li className="about__box--item"><Link className="about__box--link" to='/' >Loyiha maqsadi</Link></li>
-                        </ul>
-                        <p className="about__box--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <div className="about__btn--group">
+                            <button className={activeFirst} onClick={() => { setActiveVBtn(true) }} >Loyiha haqida</button>
+                            <button className={activeSecond} onClick={() => { setActiveVBtn(false) }}>Loyiha maqsadi</button>
+                        </div>
+                        {
+                            activeBtn
+                                ? <p className="about__box--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                : <p className="about__box--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        }
                     </div>
                     <div className="about__wrapper">
                         {

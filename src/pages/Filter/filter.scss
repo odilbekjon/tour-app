@@ -5,7 +5,7 @@
     position: absolute;
     left: 20px;
     top: 20%;
-    
+
   }
 
   input {
@@ -20,6 +20,8 @@
 .filter__wrapper {
   display: flex;
   margin-top: 20px;
+  position: relative;
+
   .filter__left {
     width: 25%;
     padding-right: 40px;
@@ -27,5 +29,14 @@
 
   .filter__right {
     width: 75%;
+
+    .pagination__block {
+      text-align: center;
+
+      .ant-pagination-options {
+        display: none;
+      }
+
+    }
   }
 }

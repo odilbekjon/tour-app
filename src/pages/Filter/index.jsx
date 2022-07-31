@@ -1,3 +1,4 @@
+import { Pagination } from 'antd'
 import React from 'react'
 import { FilterCard } from '../../Components/FilterPage/FilterCard'
 import { FilterCheck } from '../../Components/FilterPage/FilterCheck'
@@ -30,7 +31,12 @@ export const Filter = () => {
               )
             })
           }
+          <div className="pagination__block">
+          <Pagination showLessItems={false} responsive={true} defaultCurrent={1} total={500} />
+
+          </div>
         </div>
+
       </div>
     </div>
   )
