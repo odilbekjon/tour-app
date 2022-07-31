@@ -1,6 +1,7 @@
+import { Pagination } from 'antd'
 import React from 'react'
-import { FilterCard } from '../../Components/FilterPage/FilterCard/FilterCard'
-import { FilterCheck } from '../../Components/FilterPage/FilterCheck/FilterCheck'
+import { FilterCard } from '../../Components/FilterPage/FilterCard'
+import { FilterCheck } from '../../Components/FilterPage/FilterCheck'
 import './filter.scss'
 
 export const Filter = () => {
@@ -30,7 +31,12 @@ export const Filter = () => {
               )
             })
           }
+          <div className="pagination__block">
+          <Pagination showLessItems={false} responsive={true} defaultCurrent={1} total={500} />
+
+          </div>
         </div>
+
       </div>
     </div>
   )

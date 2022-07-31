@@ -1,12 +1,12 @@
 .single{
-    margin: 100px;
+    margin:  20px 0;
     display: flex;
 
     &__left {
         padding: 20px;
         border: 1.5px solid #999;
         border-radius: 20px;
-        height: 600px;
+        height: 420px;
     }
 
     &__left--head {
@@ -56,7 +56,7 @@
         font-style: normal;
         font-weight: 700;
         font-size: 64px;
-        line-height: 75px;
+        line-height: 65px;
         color: #000000;
 
     }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick'
 import './restourantCarousel.scss'
-import img from '../../../Assets/images/resImg.png'
+import img from '../../../Assets/carousel-img/resImg.png'
 
 export const RestourantCarousel = ({ title = '' }) => {
   let settings = {

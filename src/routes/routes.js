@@ -5,7 +5,8 @@ import { CityPage } from "../pages/InsideCity";
 import { City } from "../pages/City";
 import { Filter } from "../pages/Filter";
 import { About } from "../pages/About";
-import { Contact } from "../pages/Contact";
+import { Planning } from "../pages/Planning";
+
 
 export const routes = [
     {
@@ -44,9 +45,8 @@ export const routes = [
         component: About
     },
     {
-        name: "Contact",
-        path: "/contact",
-        component: Contact
-    }
-
+        name: "Rejalashtirish",
+        path: "/planning",
+        component: Planning
+    },
 ]

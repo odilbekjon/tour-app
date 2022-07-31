@@ -85,7 +85,7 @@ export default function AboutPage(){
 
     return(
         <section>
-            <div className="container">
+            {/* <div className="container">
                 <div className="about">
                     <h1 className="about__head">{content[lang].home.title4}</h1>
                     <div className="about__box">
@@ -131,7 +131,7 @@ export default function AboutPage(){
                         }
                     </ul> 
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }

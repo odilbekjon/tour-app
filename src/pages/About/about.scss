@@ -1,5 +1,5 @@
 .about {
-    margin-top: 130px;
+    margin-top: 20px;
 
     &__head {
         font-style: normal;
@@ -7,7 +7,7 @@
         font-size: 32px;
         line-height: 38px;
         color: #141414;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
 
     &__head::before {
@@ -22,7 +22,7 @@
     }
 
     &__box {
-        min-height: 400px;
+        min-height: 300px;
         box-sizing: border-box;
         padding: 20px;
         background-color: #D7E8E5;
@@ -45,31 +45,29 @@
         z-index: 0;
     }
 
-    &__box--list {
+    &__btn--group {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding: 20px 0;
         position: absolute;
-        top: -30px;
+        top: -60px;
         z-index: 10;
     }
 
-    &__box--item {
-        margin-right: 16px;
-        transition: all 0.4s linear;
-    }
-
-    &__box--link {
-        position: relative;
+    &__btn {
         padding: 18px 30px;
         font-weight: 600;
         font-size: 22px;
         line-height: 34px;
         border-radius: 50px;
-        color: #285D53;
         background-color: #fff;
+        color: #285D53;
         box-shadow: -15px 4px 22px rgba(0, 0, 0, 0.14);
         transition: all 0.2s linear;
+        margin-right: 15px;
+        border: none;
+        cursor: pointer;
 
         &:hover {
             background-color: #285D53;
@@ -148,12 +146,12 @@
     &__person--item--block {
         border: 1px solid #285D53;
         border-radius: 30px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         transition: all 0.2s linear;
         cursor: pointer;
 
         &:hover {
-            transform: translateY(-30px);
+            transform: translateY(-25px);
             transition: all 0.2s linear;
             box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.15);
         }
@@ -185,7 +183,8 @@
     }
 }
 
-.active-link {
+.active-btn,
+.active-btn2 {
     background: #285D53;
     color: #FFFFFF;
 }

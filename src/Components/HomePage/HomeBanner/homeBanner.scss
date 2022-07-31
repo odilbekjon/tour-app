@@ -1,5 +1,5 @@
-.home-carousel {
-  .home-banner {
+.home__carousel {
+  .home__banner {
     height: 150px;
     margin: 0 auto;
     width: 80%;
@@ -14,15 +14,15 @@
     left: 140px;
     bottom: 0;
 
-    .home-banner-child {
+    .home__banner--child {
       display: flex;
 
       padding-top: 20px;
 
-      .banner-icon-block {
+      .home__banner__iconBlock {
         padding-left: 40px;
 
-        .banner-icon {
+        .home__banner__icon {
           height: 40px;
           width: 40px;
           border-radius: 50%;
@@ -34,7 +34,7 @@
         }
       }
 
-      .banner-content {
+      .home__banner--content {
         h4 {
           font-weight: 600;
           font-size: 20px;
@@ -50,6 +50,14 @@
           width: 90%;
         }
       }
+    }
+  }
+}
+
+@media (min-width:0) and (max-width:446.9px) {
+  .home__carousel {
+    .home__banner {
+      display: none;
     }
   }
 }

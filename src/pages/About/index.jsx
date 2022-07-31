@@ -1,17 +1,18 @@
+import React, { useState } from "react";
 import "./about.scss";
 
 // images
-import Manager from "../../Assets/images/manager.png";
 import Tel from "../../Assets/images/tel.png";
 import Gmail from "../../Assets/images/gmail.png";
-import Person1 from "../../Assets/images/person1.png";
-import Person2 from "../../Assets/images/person2.png";
-import Person3 from "../../Assets/images/person3.png";
-import Person4 from "../../Assets/images/person4.png";
-import Person6 from "../../Assets/images/person6.png";
-import Person7 from "../../Assets/images/person7.png";
-import Person8 from "../../Assets/images/person8.png";
-import { Link } from "react-router-dom";
+
+import Manager from "../../Assets/persons/manager.png";
+import Person1 from "../../Assets/persons/person1.png";
+import Person2 from "../../Assets/persons/person2.png";
+import Person3 from "../../Assets/persons/person3.png";
+import Person4 from "../../Assets/persons/person4.png";
+import Person6 from "../../Assets/persons/person6.png";
+import Person7 from "../../Assets/persons/person7.png";
+import Person8 from "../../Assets/persons/person8.png";
 
 const projectLeader = [
     {
@@ -77,18 +78,32 @@ const organizers = [
 ]
 
 export const About = () => {
+    const [activeBtn, setActiveVBtn] = useState('firstBtn')
+    let classNames = require('classnames')
+    let activeFirst = classNames({
+        "about__btn": true,
+        "active-btn": activeBtn
+    })
+    let activeSecond = classNames({
+        "about__btn": true,
+        "active-btn": !activeBtn
+    })
+    
     return (
         <section>
             <div className="container">
                 <div className="about">
                     <h1 className="about__head">Loyiha haqida</h1>
                     <div className="about__box">
-                        <ul className="about__box--list">
-                            <li className="about__box--item"><Link className="about__box--link active-link" to='/' >Loyiha haqida</Link></li>
-                            <li className="about__box--item"><Link className="about__box--link" to='/' >Uning maqsadi</Link></li>
-                            <li className="about__box--item"><Link className="about__box--link" to='/' >Lorem ipsum</Link></li>
-                        </ul>
-                        <p className="about__box--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <div className="about__btn--group">
+                            <button className={activeFirst} onClick={() => { setActiveVBtn(true) }} >Loyiha haqida</button>
+                            <button className={activeSecond} onClick={() => { setActiveVBtn(false) }}>Loyiha maqsadi</button>
+                        </div>
+                        {
+                            activeBtn
+                                ? <p className="about__box--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                : <p className="about__box--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        }
                     </div>
                     <div className="about__wrapper">
                         {
@@ -96,7 +111,7 @@ export const About = () => {
                                 return (
                                     <div key={e} className="about__wrap">
                                         <div className="about__wrap--left">
-                                            <img src={i.image} width={400} height={400} alt="image" />
+                                            <img src={i.image} width={400} height={400} alt="" />
                                         </div>
                                         <div className="about__wrap--right">
                                             <h2 className="about__right--head">{i.name}</h2>
