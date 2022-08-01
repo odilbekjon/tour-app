@@ -6,6 +6,7 @@ import { City } from "../pages/City";
 import { Filter } from "../pages/Filter";
 import { About } from "../pages/About";
 import { Planning } from "../pages/Planning";
+import { Single3 } from "../pages/Single/Single"
 
 
 export const routes = [
@@ -18,6 +19,12 @@ export const routes = [
         name: "Single",
         path: "/single",
         component: Single
+    },
+    ,
+    {
+        name: "Single3",
+        path: "/single3",
+        component: Single3
     },
     {
         name: "Cities",

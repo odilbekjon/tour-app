@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import Carousel1 from "../../../Assets/carousel-img/carousel-img1.jpg";
-import { PageHeader } from '../../PageHeader';
 
+import '../../PageHeader/pageHeader.scss'
 import './cityCarousel.scss'
 
 export const CityCarousel = () => {
@@ -48,7 +49,11 @@ export const CityCarousel = () => {
     <div className='city_carousel_wrapper'>
       <div className='container'>
         <div className='city_carousel_header'>
-          <PageHeader />
+          <ul class="breadcrumb">
+            <li><Link to='/'>Bosh sahifa</Link></li>
+            <li><Link to='/cities'>Shaharlar</Link></li>
+            <li>Toshkent</li>
+          </ul>
         </div>
         <div className='city_carousel_block'>
           <Slider {...settings}>

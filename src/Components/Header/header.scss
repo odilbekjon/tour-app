@@ -1,12 +1,13 @@
 .sticky {
     height: 70px;
     width: 100%;
-    z-index: 10;
+    z-index: 111;
     background-color: #fff;
     box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     padding: 20px !important;
     animation-name: sticky_active;
     animation-duration: 0.8s;
@@ -78,13 +79,16 @@
     border-radius: 20px !important;
     font-size: 14px !important;
     background: rgba(40, 93, 83, 0.1) !important;
+    font-weight:600 !important;
 
     &:hover {
         transition: all 0.2s linear;
         border: 1px solid #285D53 !important;
     }
 }
-
+.ant-select-selection-item{
+    font-weight: 600 !important;
+}
 .active::after {
     content: "";
     display: block;

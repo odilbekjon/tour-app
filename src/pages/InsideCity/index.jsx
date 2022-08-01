@@ -5,7 +5,6 @@ import { MainCarousel_two } from '../../Components/Carousels/MainCarousel_two';
 import { RestourantCarousel } from '../../Components/Carousels/RestourantCarousel';
 
 export const CityPage = () => {
-
   return (
     <>
       <CityCarousel />
