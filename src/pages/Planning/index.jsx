@@ -11,24 +11,13 @@ import img3 from '../../Assets/registon.png'
 import img4 from '../../Assets/Ellipse 9.png'
 
 export const Planning = () => {
-  const planningForm = document.querySelector('.scrolling')
-
-  function scrollTo(element) {
-    console.log(element);
-    window.scroll({
-      left: 0,
-      top: element.offsetTop,
-      behavior: 'smooth'
-    })
-  }
-
   return (
     <div className='container'>
       <div className='planning__header'>
         <div className='planning__header--content'>
           <h2 className='planning__header--title'>O’zbekiston bo’ylab sayohatlar rejalashtiring</h2>
           <p className='planning__header--text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <button className='planning__header--btn'><a href='#plan'> Rejalashtirish</a></button>
+          <a className='planning__header--btn' href="#id">Rejalashtirish</a>
         </div>
         <div className='planning__header--img--block'>
           <img className='planning__header--img1' src={img1} alt="" />
@@ -48,7 +37,9 @@ export const Planning = () => {
         <img className='planning__header--ellipse2' src={ellipse2} alt="" />
       </div>
       <Regions />
+      <div id="id">
       <PlanningForm />
+      </div>
     </div>
   )
 }

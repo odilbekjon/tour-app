@@ -3,12 +3,9 @@ import { Navigate } from 'react-router';
 import Layout from "./layout";
 
 import '../src/Assets/sass/main.scss';
-// react-slick-carousel 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// antd css
 import 'antd/dist/antd.css';
-// routes
 import { routes } from './routes/routes'
 
 export const App = () => {
@@ -23,6 +20,6 @@ export const App = () => {
         </Routes>
       </Layout>
     </BrowserRouter>
-  );
+  )
 }
 

@@ -4,6 +4,9 @@ import Slider from "react-slick";
 
 import './mainCarouselOne.scss'
 
+// images
+import Image1 from "../../../Assets/images/single-1.png";
+
 export const MainCarousel_one = ({ title = '', text = '' }) => {
   let settings = {
     dots: false,
@@ -53,7 +56,11 @@ export const MainCarousel_one = ({ title = '', text = '' }) => {
               [1, 2, 3, 4, 5, 6, 7].map((item, key) => {
                 return (
                   <div className='carousel-item' key={key}>
-                    <Link className='single__carousel--link' to={'/single'}><div></div>
+                    <Link className='single__carousel--link' to={'/single'}>
+                      {/* <img className='single__image' src={Image1} alt="" /> */}
+                      <div>
+                      <img className='single__image' src={Image1} alt="" />
+                      </div>
                     <h4>Lorem ipsum</h4></Link>
                   </div>
                 )

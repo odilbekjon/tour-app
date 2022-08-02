@@ -7,10 +7,10 @@ import { Provider } from "./Context/LangContext"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
       <Provider>
         <App />
       </Provider>
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
   </React.StrictMode>
 )

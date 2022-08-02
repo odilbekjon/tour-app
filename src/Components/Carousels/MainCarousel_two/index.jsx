@@ -1,7 +1,10 @@
 import React from 'react'
 import Slider from "react-slick";
 import { Link } from 'react-router-dom'
-import './mainCarouselTwo.scss'
+import './mainCarouselTwo.scss';
+
+// images
+import Images2 from "../../../Assets/images/single-2.png"
 
 export const MainCarousel_two = ({ title = '', text = '' }) => {
   let settings = {
@@ -56,7 +59,7 @@ export const MainCarousel_two = ({ title = '', text = '' }) => {
                   <div className='carousel-item' key={key}>
                     <div className='carousel-card'>
                       <div className='carousel-card-img'>
-                        <img src="" alt="" />
+                        <img src={Images2} alt="" />
                       </div>
                       <h4>Lorem Ipsum</h4>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
